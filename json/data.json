@@ -1,0 +1,26 @@
+{
+    "data": {
+        "inventory": {
+            "desk" : {
+                "manufacturer": "Steelcase",
+                "manufacturerDate": "June 2nd 1945",
+                "weight": 345,
+                "colorVariation": "chromium",
+                "drawers" : {
+                    "left": {
+                        "top": "Stacks of useless broken pens",
+                        "medium": "Documents that were expired several years ago",
+                        "bottom": "A 6 pack and some red cups"
+                    },
+                    "right" : {
+                        "top": "Deflated baloonsz",
+                        "medium": "Several ounces of jello",
+                        "bottom": "An obscure amount of napkins"
+                    },
+                "condition" : "Aggressively Used",
+                "price": "1750"
+                }
+            }
+        }
+    } 
+}
