@@ -9,7 +9,7 @@
       <li>Price: <input type="text" :prop="price"></li>
       <li>Shipping: <input type="text" :prop="shipping"></li>
     </ul>
-    <button v-on:click="appendItem">Submit</button>
+    <!-- <button v-on:click="appendItem">Submit</button> -->
 </div>  
 </template>
 

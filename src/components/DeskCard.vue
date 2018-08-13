@@ -27,6 +27,9 @@ export default {
     condition: String,
     price: String,
     shipping: String
+  },
+  data () {
+    inventory: null
   }
 };
 </script>

@@ -2,44 +2,17 @@
   <div id="app">
     <Header/>
     <div class="container" style="display:grid; grid-template-columns:50% 50%">
-      <NewDeskCard 
-        manufacturer = "Steelcase"
-      />
+      <NewDeskCard/>
       <DeskCard 
-        manufacturer = "Steelcase"
-        manufacturerDate = "June 2nd 1945"
-        weight = 345
-        colorVariation = "Creamy"
-        condition = "Aggressively Used"
-        price = 430
-        shipping = 345
-      />
-      <DeskCard 
-        manufacturer = "Jarvis"
-        manufacturerDate = "April 22nd 2016"
-        weight = 235
-        colorVariation = "Oak"
-        condition = "Gently Used"
-        price = 1300
-        shipping = 45
-      />
-      <DeskCard 
-        manufacturer = "Ikea"
-        manufacturerDate = "January 15th 2018"
-        weight = 50
-        colorVariation = "Teak"
-        condition = "Unopened"
-        price = 45
-        shipping = 25
-      />
-      <DeskCard 
-        manufacturer = "Herman Miller"
-        manufacturerDate = "April 22nd 2011"
-        weight = 145
-        colorVariation = "Space Gray"
-        condition = "Unopened"
-        price = 780
-        shipping = 65
+        v-for="item in inventory"
+        :key="item.id"
+        manufacturer = {{item.manufacturer}}
+        manufacturerDate = {{item.manufacturerDate}}
+        weight = {{item.weight}}
+        colorVariation = {{item.colorVariation}}
+        condition = {{item.condition}}
+        price = {{item.price}}
+        shipping = {{item.shipping}}
       />
     </div>
   </div>
@@ -49,6 +22,7 @@
 import NewDeskCard from './components/NewDeskCard.vue'
 import DeskCard from './components/DeskCard.vue'
 import Header from './components/Header.vue'
+import data from '../json/data.json';
 
 export default {
   name: 'app',
@@ -56,6 +30,11 @@ export default {
     NewDeskCard,
     DeskCard,
     Header
+  },
+  data () {
+    return {
+      inventory: data
+    }
   }
 }
 </script>
