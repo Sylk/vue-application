@@ -2,6 +2,9 @@
   <div id="app">
     <Header/>
     <div class="container" style="display:grid; grid-template-columns:50% 50%">
+      <NewDeskCard 
+        manufacturer = "Steelcase"
+      />
       <DeskCard 
         manufacturer = "Steelcase"
         manufacturerDate = "June 2nd 1945"
@@ -43,12 +46,14 @@
 </template>
 
 <script>
+import NewDeskCard from './components/NewDeskCard.vue'
 import DeskCard from './components/DeskCard.vue'
 import Header from './components/Header.vue'
 
 export default {
   name: 'app',
   components: {
+    NewDeskCard,
     DeskCard,
     Header
   }
