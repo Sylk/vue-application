@@ -1,16 +1,49 @@
 {
-    "data": {
-        "inventory": {
-            "desk" : {
-                "manufacturer": ["Steelcase", "Jarvis", "Ikea", "Herman MIller"],
-                "manufacturerDate": ["June 2nd 1945", "April 22nd 2016", "January 15th 2018", "April 22nd 2011"],
-                "weight": [345, 235, 50, 145],
-                "colorVariation": ["Creamy", "Oak", "Teak", "Space Gray"],
-                "condition" : ["Aggressivelyx Used", "Gently Used", "Unopened", "Unopened"],
-                "price": [430, 1300, 45, 780],
-                "shipping": [345, 45, 25, 65]
-                
-            }
+    "inventory": [
+        {
+            "manufacturer": "Steelcase",
+            "manufacturerDate": "June 2nd 1945",
+            "weight": 345,
+            "colorVariation": "Creamy",
+            "condition": "Aggressively Used",
+            "price": 430,
+            "shipping": 345
+        },
+        {
+            "manufacturer": "Jarvis",
+            "manufacturerDate": "April 22nd 2016",
+            "weight": 235,
+            "colorVariation": "Oak",
+            "condition": "Gently Used",
+            "price": 1300,
+            "shipping": 45
+        },
+        {
+            "manufacturer": "Ikea",
+            "manufacturerDate": "January 15th 2018",
+            "weight": 50,
+            "colorVariation": "Teak",
+            "condition": "Unopnened",
+            "price": 285,
+            "shipping": 25
+        },
+        {
+            "manufacturer": "Jarvis",
+            "manufacturerDate": "April 22nd 2016",
+            "weight": 235,
+            "colorVariation": "Oak",
+            "condition": "Gently Used",
+            "price": 1300,
+            "shipping": 45
+        },
+        {
+            "manufacturer": "Herman MIller",
+            "manufacturerDate": "April 22nd 2011",
+            "weight": 145,
+            "colorVariation": "Space Gray",
+            "condition": "Unopened",
+            "price": 780,
+            "shipping": 65
         }
-    } 
+    ]
 }

@@ -1,35 +1,20 @@
 <template>
 <div>
-    <h1 :prop="manufacturer">{{manufacturer}}</h1>
+    <h1>{{desk.manufacturer}}</h1>
     <ul>
-      <li>Manufacture Date: {{manufacturerDate}}</li>
-      <li>Weight: {{weight}} lbs</li>
-      <li>Color Variation: {{colorVariation}}</li>
-      <li>Condition: {{ condition }}</li>
-      <li>Price: {{ price }} USD</li>
-      <li>Shipping: {{ shipping }} USD</li>
+      <li>Manufacture Date: {{desk.manufacturerDate}}</li>
+      <li>Weight: {{desk.weight}} lbs</li>
+      <li>Color Variation: {{desk.colorVariation}}</li>
+      <li>Condition: {{desk.condition}}</li>
+      <li>Price: {{desk.price}} USD</li>
+      <li>Shipping: {{desk.shipping}} USD</li>
     </ul>
 </div>  
 </template>
 
 <script>
-// import json from "../../json/data.json";
 
 export default {
-  props: {
-    manufacturer: String,
-    manufacturerDate: String,
-    weight: String,
-    colorVariation: String,
-    top: String,
-    medium: String,
-    bottom: String,
-    condition: String,
-    price: String,
-    shipping: String
-  },
-  data () {
-    inventory: null
-  }
+  props: ['desk']
 };
 </script>

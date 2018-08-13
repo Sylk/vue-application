@@ -4,7 +4,7 @@
         <li style="float: left;">
             <h1 style="color:white;">Vue Application</h1>
         </li>    
-        <li v-for="link in links" style="float: left;">
+        <li v-for="(link,linky) in links" :key='linky' style="float: left;">
             <a :href="link" style="display: block; color: white; text-align: center; padding: 16px; text-decoration: none;">
                 {{link}}
             </a>

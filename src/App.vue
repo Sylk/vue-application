@@ -3,17 +3,7 @@
     <Header/>
     <div class="container" style="display:grid; grid-template-columns:50% 50%">
       <NewDeskCard/>
-      <DeskCard 
-        v-for="item in inventory"
-        :key="item.id"
-        manufacturer = {{item.manufacturer}}
-        manufacturerDate = {{item.manufacturerDate}}
-        weight = {{item.weight}}
-        colorVariation = {{item.colorVariation}}
-        condition = {{item.condition}}
-        price = {{item.price}}
-        shipping = {{item.shipping}}
-      />
+      <DeskCard v-for='(desk,index) in inventory' :key='index' :desk='desk'/>
     </div>
   </div>
 </template>
@@ -22,7 +12,10 @@
 import NewDeskCard from './components/NewDeskCard.vue'
 import DeskCard from './components/DeskCard.vue'
 import Header from './components/Header.vue'
-import data from '../json/data.json';
+import data from '../json/data.json'
+import jQuery from 'jquery'
+import popper from 'popper.js'
+import Bootstrap from 'bootstrap'
 
 export default {
   name: 'app',
@@ -33,7 +26,7 @@ export default {
   },
   data () {
     return {
-      inventory: data
+      inventory: data.inventory
     }
   }
 }
